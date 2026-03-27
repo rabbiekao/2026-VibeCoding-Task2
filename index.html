@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rabbie Kao · Frontend Dev</title>
-  <meta name="description" content="這是一個個人品牌網站，用來介紹個人背景、技能、作品集與聯絡方式，展示前端開發能力與專業經驗，並提供合作與聯繫管道。">
+  <title>Rabbie Kao / Digital Growth & AI / Educator</title>
+  <meta name="description" content="這是我的個人品牌網站，用來介紹個人背景、技能、作品集與聯絡方式，期待認識更多志同道合的夥伴，歡迎透過以下管道和我聯繫、互相交流🙌">
 
   <style>
     /* CSS:BASE-START */
@@ -47,11 +47,11 @@
     .section-title {
       font-size: 1.75rem;
       margin-bottom: 16px;
-      color: #38bdf8;
+      color: #7F97FA;
     }
 
     a {
-      color: #38bdf8;
+      color: #7F97FA;
       text-decoration: none;
     }
 
@@ -124,6 +124,53 @@
     /* CSS:ABOUT-START */
     .section-about {
     }
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .about-text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .about-list {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .about-list li {
+      margin-bottom: 8px;
+    }
+
+    .about-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      border: 1px solid #7F97FA;
+      color: #0f172a;
+      background-color: #7F97FA;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: #7F97FA;
+    }
+
+    .about-image {
+      border-radius: 8px;
+      overflow: hidden;
+    }
     /* CSS:ABOUT-END */
 
 
@@ -160,6 +207,16 @@
       .nav-links {
         gap: 20px;
       }
+
+      .about-content {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .about-text,
+      .about-image {
+        flex: 1;
+      }
     }
     /* CSS:RWD-END */
   </style>
@@ -170,7 +227,7 @@
 
     <header class="site-header">
       <div class="container nav">
-        <div class="nav-logo">Rabbie Kao · Frontend Dev</div>
+        <div class="nav-logo">Rabbie Kao</div>
         <nav class="nav-links">
           <a class="nav-link" href="#hero">首頁</a>
           <a class="nav-link" href="#about">關於我</a>
@@ -188,14 +245,14 @@
         <div class="container hero-content">
 
           <div class="hero-text">
-            <h1 class="hero-title">這裡是個人網站的主視覺區（Hero Section）</h1>
-            <p>這裡之後會放一句話自我介紹、核心職稱（例如 Frontend Developer）以及主要價值主張，幫助訪客快速理解你是誰、能提供什麼價值。</p>
-            <p>同時也會加入行動呼籲（例如：瀏覽作品集、下載履歷或聯絡我），引導使用者進一步互動。</p>
-            <p>👉 提示：之後會用 Section SDD 的 Prompt 產生正式文案與版面，再把整個 section 貼回來取代這一區。</p>
+            <h1 class="hero-title">Rabbie Kao</h1>
+            <p>Rabbie Kao 高而芬（aka 小兔），現任 BetweenGos 職涯服務平台營運長， 同時為中小企業商業顧問。</p>
+            <p>期待認識更多志同道合的夥伴，歡迎透過以下管道和我聯繫、互相交流🙌</p>
+            <p>IG / LinkedIn：@rabbiekao</p>
           </div>
 
           <div class="hero-image">
-            <img src="https://source.unsplash.com/800x600/?developer,laptop" alt="在筆電前撰寫程式碼的前端開發者" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1670552508317-e4e3ba5a4df0?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="laptop">
           </div>
 
         </div>
@@ -205,10 +262,27 @@
 
       <!-- SECTION:ABOUT-START -->
       <section id="about" class="section section-about" aria-labelledby="about-heading">
-        <div class="container">
-          <h2 id="about-heading" class="section-title">關於我（之後會用 Section SDD 替換）</h2>
-          <p>這裡目前是 About 區的占位內容，之後會用另一個 Prompt 產生更完整的個人背景、自我介紹與經驗說明。</p>
-          <p>👉 提示：之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
+        <div class="container about-content">
+
+          <div class="about-text">
+            <h2 id="about-heading" class="section-title">關於我</h2>
+
+            <p>我目前專注在職涯教育、商業顧問與數位成長領域，結合策略規劃、內容行銷與產品思維，協助個人與企業找到更有效的成長方式。</p>
+
+            <p>過去在新創與教育產業累積多年經驗，我很重視溝通與結構化思考，也喜歡把複雜的事情講清楚、做簡單，讓好的想法可以被真正執行與落地。</p>
+
+            <ul class="about-list">
+              <li>擅長策略規劃與商業模式設計</li>
+              <li>能將複雜概念轉化為清晰可執行的內容</li>
+              <li>具備教學與內容轉化能力，讓知識更容易被吸收</li>
+            </ul>
+
+            <div class="about-actions">
+              <a href="#projects" class="btn">查看作品集</a>
+              <a href="#contact" class="btn btn-outline">聯絡我</a>
+            </div>
+          </div>
+
         </div>
       </section>
       <!-- SECTION:ABOUT-END -->
@@ -217,9 +291,8 @@
       <!-- SECTION:SKILLS-START -->
       <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
         <div class="container">
-          <h2 id="skills-heading" class="section-title">技能（之後會用 Section SDD 替換）</h2>
-          <p>這裡目前是 Skills 區的占位內容，未來會列出技術能力（例如 HTML、CSS、React 等）以及熟練程度。</p>
-          <p>👉 提示：之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
+          <h2 id="skills-heading" class="section-title">技能</h2>
+          <p>BD / Operations / Digital Growth</p>
         </div>
       </section>
       <!-- SECTION:SKILLS-END -->
@@ -228,9 +301,8 @@
       <!-- SECTION:PROJECTS-START -->
       <section id="projects" class="section section-projects" aria-labelledby="projects-heading">
         <div class="container">
-          <h2 id="projects-heading" class="section-title">作品集（之後會用 Section SDD 替換）</h2>
-          <p>這裡目前是 Projects 區的占位內容，未來會展示實際專案案例，包含圖片、簡介與連結。</p>
-          <p>👉 提示：之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
+          <h2 id="projects-heading" class="section-title">作品集</h2>
+          <p>To be continued...</p>
         </div>
       </section>
       <!-- SECTION:PROJECTS-END -->
@@ -239,17 +311,12 @@
       <!-- SECTION:CONTACT-START -->
       <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
         <div class="container">
-          <h2 id="contact-heading" class="section-title">聯絡我（之後會用 Section SDD 替換）</h2>
-          <p>這裡目前是 Contact 區的占位內容，之後會提供 Email、LinkedIn、GitHub 等聯絡方式。</p>
+          <h2 id="contact-heading" class="section-title">聯絡我</h2>
+          <p>你也可以先透過以下方式聯絡：</p>
           <p>
-            你也可以先透過以下方式聯絡：
-            <br>
-            Email：<a href="mailto:hello@example.com">hello@example.com</a><br>
-            電話：<a href="tel:+886900000000">+886 900 000 000</a><br>
-            GitHub：<a href="https://github.com/yourname">https://github.com/yourname</a><br>
-            LinkedIn：<a href="https://www.linkedin.com/in/yourname">https://www.linkedin.com/in/yourname</a>
+            GitHub：<a href="https://github.com/rabbiekao">https://github.com/rabbiekao</a><br>
+            LinkedIn：<a href="https://www.linkedin.com/in/rabbiekao">https://www.linkedin.com/in/rabbiekao</a>
           </p>
-          <p>👉 提示：之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
         </div>
       </section>
       <!-- SECTION:CONTACT-END -->
@@ -258,7 +325,7 @@
 
     <footer>
       <div class="container">
-        <p>© 2026 Rabbie Kao · Frontend Dev. All rights reserved.</p>
+        <p>© 2026 Rabbie Kao · Educator. All rights reserved.</p>
       </div>
     </footer>
 
